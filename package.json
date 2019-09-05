@@ -1,0 +1,89 @@
+{
+  "name": "@titanium/hashids",
+  "version": "1.1.0",
+  "author": "hashids.org <npm@invent.life> (https://github.com/hashids)",
+  "source": {
+    "name": "hashids",
+    "url": "https://www.npmjs.com/package/hashids"
+  },
+  "description": "Generate YouTube-like ids from numbers. Use Hashids when you do not want to expose your database ids to the user.",
+  "contributors": [
+    {
+      "name": "Ivan Akimov",
+      "email": "ivan@barreleye.com",
+      "url": "https://twitter.com/IvanAkimov"
+    },
+    {
+      "name": "Bazyli Brzóska",
+      "email": "npm@invent.life",
+      "url": "https://twitter.com/niieani"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Brenton House",
+      "email": "brenton.house@gmail.com",
+      "url": "https://brenton.house"
+    }
+  ],
+  "homepage": "http://hashids.org/javascript",
+  "repository": {
+    "type": "git",
+    "url": "github:brentonhouse/titanium-hashids"
+  },
+  "bugs": {
+    "url": "https://github.com/niieani/hashids.js/issues"
+  },
+  "main": "./hashids.js",
+  "scripts": {
+    "download": "npm install --save-dev $npm_package_source_name@$npm_package_version",
+    "commit": "git add -A && git commit -m \":checkered_flag: v$npm_package_version :heavy_minus_sign: Repackaging from: $npm_package_source_url\"",
+    "tag": "git tag v$npm_package_version",
+    "push": "git push && git push --tags",
+    "update:version": "npm --no-git-tag-version --allow-same-version version --",
+    "update:download": "npm run download",
+    "update:copy": "cp ./node_modules/hashids/dist/hashids.js . && cp ./node_modules/hashids/readme.md ./original-readme.md",
+    "update:commit": "",
+    "update:push2": "npm run update:version --",
+    "update:push": "npm run update:version --",
+    "update:publish": "npm run update:version --",
+    "postupdate:download": "npm run update:copy",
+    "postupdate:commit": "npm run commit && npm run tag",
+    "postupdate:push": "npm run postupdate:commit && npm run push",
+    "postupdate:push2": "npm run postupdate:download && npm run postupdate:commit && npm run push",
+    "postupdate:publish": "npm run postupdate:push && npm publish",
+    "list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint && yarn run test"
+    }
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 0.5%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "dependencies": {},
+  "license": "MIT",
+  "keywords": [
+    "hashids",
+    "hashid",
+    "hash",
+    "ids",
+    "youtube",
+    "bitly",
+    "obfuscate",
+    "encode",
+    "decode",
+    "encrypt",
+    "decrypt",
+    "titanium",
+    "mobile",
+    "brenton-house"
+  ],
+  "devDependencies": {
+    "hashids": "^1.1.0"
+  }
+}
