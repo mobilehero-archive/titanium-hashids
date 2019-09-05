@@ -15,7 +15,7 @@ Getting started
 
 Install Hashids via:
 
-- [node.js](): `npm install --save hashids`
+- [node.js](https://nodejs.org): `npm install --save hashids`
 - [bower](http://bower.io/): `bower install hashids`
 - [jam](http://jamjs.org/): `jam install hashids`
 
@@ -126,7 +126,7 @@ Pitfalls
 	```javascript
 	var hashids = new Hashids();
 
-	var id = hashids.encode('a123');
+	var id = hashids.encode('123a');
 	console.log(id === ''); // true
 	```
 
