@@ -84,6 +84,6 @@
     "brenton-house"
   ],
   "devDependencies": {
-    "hashids": "^1.1.2"
+    "hashids": "^2.2.0"
   }
 }
