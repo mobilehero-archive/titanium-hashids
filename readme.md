@@ -1,3 +1,5 @@
+[//]: # (header-start)
+
 <a href="https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de">
 	<h1 align="center">
 	🪦 RIP Axway Amplify Titanium (2010 - 2022)
@@ -23,8 +25,8 @@
 <hr>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-# @titanium/sdk-manager
 
+[//]: # (header-end)
 
 # @titanium/hashids
 
