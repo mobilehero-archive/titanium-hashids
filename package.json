@@ -1,6 +1,6 @@
 {
   "name": "@titanium/hashids",
-  "version": "1.1.23",
+  "version": "1.1.24",
   "author": "hashids.org <npm@invent.life> (https://github.com/hashids)",
   "source": {
     "name": "hashids",
@@ -87,15 +87,15 @@
     "@titanium/errors": "^1.0.19",
     "@titanium/essentials": "^1.0.53",
     "@titanium/events": "^1.0.31",
-    "@titanium/eventsource": "^1.0.21",
+    "@titanium/eventsource": "^1.0.22",
     "@titanium/jsonc": "^1.0.20",
-    "@titanium/jwt": "^1.0.24",
-    "@titanium/module-copier": "^1.0.27",
+    "@titanium/jwt": "^1.0.25",
+    "@titanium/module-copier": "^1.0.28",
     "@titanium/please": "^1.0.31",
-    "@titanium/polyfill": "^1.0.28",
+    "@titanium/polyfill": "^1.0.29",
     "@titanium/querystring": "^1.0.19",
     "@titanium/tiapp-xml": "^1.0.30",
-    "@titanium/titanium": "^5.4.24",
+    "@titanium/titanium": "^5.4.25",
     "@titanium/turbo": "^2.2.45"
   },
   "license": "MIT",
@@ -126,7 +126,7 @@
     "brenton-house"
   ],
   "devDependencies": {
-    "@titanium/eslint-config": "^1.0.24",
+    "@titanium/eslint-config": "^1.0.25",
     "hashids": "^2.2.10"
   }
 }
